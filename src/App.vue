@@ -1,15 +1,9 @@
 <template>
-    <div id="app">
-        <router-view/>
+    <div>
+        <router-view></router-view>
     </div>
 </template>
 
 <style lang="scss">
     @import 'scss/main';
 </style>
-
-<script>
-  export default {
-    name: 'App'
-  }
-</script>

@@ -1,2 +1,22 @@
+@import 'body';
+
+// ----------------------------
+// Components
+// ----------------------------
 @import 'components/button';
 @import 'components/color';
+
+
+// ----------------------------
+// Mixins
+// ----------------------------
+@import 'mixins/media';
+
+// ----------------------------
+// Pages
+// ----------------------------
+@import 'pages/header';
+@import 'pages/skills';
+
+
+

@@ -1,0 +1,35 @@
+.header {
+  	//background-image: url('assets/header-background.jpg');
+	margin:0;
+	padding:0;
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__my-picture {
+  	//	background-image: url('assets/my-picture.jpg');
+  		background-position: 45% 5%;
+		position: relative;
+	    top: 35vh;
+
+		$height_my_picture: 250px;
+		width: $height_my_picture;
+		height: $height_my_picture;
+	    left: calc(50vw - #{$height_my_picture}/2);
+
+	    &--round {
+	    	border-radius: 50%;
+	    	border: 1px solid black;
+	    }
+	}
+
+	&__identity {
+		text-align: center;
+		position: relative;
+		top: 40vh;
+		color: white;
+		font-size: 2em;
+	}
+}
