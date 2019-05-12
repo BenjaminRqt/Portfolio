@@ -1,15 +1,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import VueThreejs from 'vue-threejs'
+import VueParticles from 'vue-particles'
 
-Vue.config.productionTip = false
-
+        
 new Vue({
   el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  components: { App }
 })
 
-Vue.use(VueThreejs)
+Vue.use(VueParticles)
