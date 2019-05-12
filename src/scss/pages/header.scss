@@ -1,35 +1,28 @@
 .header {
-  	//background-image: url('assets/header-background.jpg');
-	margin:0;
-	padding:0;
-	height: 100vh;
-	width: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
 	&__my-picture {
   		background-image: url('assets/my-picture.jpg');
   		background-position: 45% 5%;
 		position: absolute;
-	    top: 35vh;
+	    top: 25vh;
+		z-index: 1;
 
-		$height_my_picture: 400px;
+		$height_my_picture: 300px;
 		width: $height_my_picture;
 		height: $height_my_picture;
-	    left: calc(50vw - #{$height_my_picture}/2);
+	    left: calc(49vw - #{$height_my_picture}/2);
 
 	    &--round {
 	    	border-radius: 50%;
-	    	border: 1px solid black;
 	    }
 	}
 
 	&__identity {
+		z-index: 1;
 		text-align: center;
 		position: relative;
-		top: 40vh;
-		color: white;
-		font-size: 2em;
+		top: 60vh;
+		color: #20364d;
+		font-size: 2.4em;
+		text-shadow: 1px 1px;
 	}
 }
