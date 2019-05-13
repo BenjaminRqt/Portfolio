@@ -20,6 +20,8 @@
             clickMode="push"
           >
         </vue-particles>
+
+        <skills></skills>
     </div>
 </template>
 
