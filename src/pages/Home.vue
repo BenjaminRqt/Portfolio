@@ -26,8 +26,10 @@
 </template>
 
 <script>
-  import Cover from '../components/Cover'
-  import Skills from '../components/Skills'
+  import Cover from './Cover'
+  import Skills from './Skills'
+  import Skills from './Projects'
+  import Skills from './AboutMe'
 
   export default {
     components: {
