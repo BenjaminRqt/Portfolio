@@ -14,12 +14,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "chart.js": "^2.8.0",
     "dat.gui": "^0.7.5",
     "node-sass": "^4.10.0",
     "oimo": "^1.0.9",
     "sass-loader": "^7.1.0",
     "three": "^0.101.1",
     "vue": "^2.5.2",
+    "vue-chartjs": "^3.4.2",
     "vue-router": "^3.0.1",
     "vue-scrollmagic": "^1.1.0",
     "vue-threejs": "^0.1.1"

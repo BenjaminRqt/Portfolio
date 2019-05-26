@@ -5,7 +5,7 @@
       <vue-particles
             color="#20364d"
             :particleOpacity="0.7"
-            :particlesNumber="60"
+            :particlesNumber="80"
             shapeType="circle"
             :particleSize="4"
             linesColor="#1b4f6d"
@@ -13,7 +13,7 @@
             :lineLinked="true"
             :lineOpacity="0.4"
             :linesDistance="150"
-            :moveSpeed="2"
+            :moveSpeed="1.5"
             :hoverEffect="false"
             hoverMode="grab"
             :clickEffect="false"
