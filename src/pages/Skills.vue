@@ -23,7 +23,7 @@
 
 <script>
 
-import Radar from './radar'
+import Radar from '../components/radar'
 
   export default {
     components: {

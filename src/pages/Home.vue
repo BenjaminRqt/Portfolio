@@ -22,19 +22,23 @@
         </vue-particles>
 
         <skills></skills>
+        <projects></projects>
+        <about-me></about-me>
     </div>
 </template>
 
 <script>
   import Cover from './Cover'
   import Skills from './Skills'
-  import Skills from './Projects'
-  import Skills from './AboutMe'
+  import Projects from './Projects'
+  import AboutMe from './AboutMe'
 
   export default {
     components: {
       Cover,
-      Skills
+      Skills,
+      Projects,
+      AboutMe,
     }
   }
 </script>
