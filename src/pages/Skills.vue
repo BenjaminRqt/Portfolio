@@ -1,80 +1,86 @@
 <template>
-    <div class="skills">
-        <div class="skills__title">
-            Compétences
-        </div>
-        <div class="radar-chart-js">
-            <div class="chart">
-                <radar 
-                    :datacollection="datacollectionBackEndSkill"
-                    :options="optionsBackEnd"
-                ></radar>
-            </div>
-
-            <div class="chart">
-                <radar 
-                    :datacollection="datacollectionFrontEndSkill"
-                    :options="optionsfrontEnd"
-                ></radar>
-            </div>
-        </div>
+  <div class="skills">
+    <h2 class="title">Compétences</h2>
+    <div class="radar-chart-js">
+      <div v-for="(chart, index) in charts" :key="index" class="chart">
+        <radar :datacollection="chart.datacollection" :options="chart.options"></radar>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-
 import Radar from '../components/radar'
 
-  export default {
-    components: {
-      Radar
-    },
-    data: () => ({
-        datacollectionBackEndSkill: {
+export default {
+  components: {
+    Radar
+  },
+  data: function () {
+    return {
+      charts: [
+        {
+          datacollection: {
             labels: ['Symfony', 'Php', 'Html', 'JavaScript', 'Twig'],
             datasets: [
-                {
-                    label: '',
-                    backgroundColor: 'rgba(68, 146, 184, 0.7)',
-                    data: [0.8,0.8,0.8,0.8,0.8]
-                }
+              {
+                label: '',
+                backgroundColor: [
+                  '#3e95cd',
+                  '#8e5ea2',
+                  '#3cba9f',
+                  '#e8c3b9',
+                  '#c45850'
+                ],
+                data: [2, 1.5, 1.2, 1.9, 1.1]
+              }
             ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            title: {
+              display: true,
+              text: 'Compétence Back-end',
+              fontSize: 20
+            },
+            legend: {
+              display: false
+            }
+          }
         },
-        datacollectionFrontEndSkill: {
-            labels: ['VueJS', 'Javascript', 'Html', 'JavaScript', 'Twig'],
+        {
+          datacollection: {
+            labels: ['Symfony', 'Php', 'Html', 'JavaScript', 'Twig'],
             datasets: [
-                {
-                    label: '',
-                    backgroundColor: 'rgba(68, 146, 184, 0.7)',
-                    data: [0.8,0.8,0.8,0.8,0.8]
-                }
+              {
+                label: '',
+                backgroundColor: [
+                  '#3e95cd',
+                  '#8e5ea2',
+                  '#3cba9f',
+                  '#e8c3b9',
+                  '#c45850'
+                ],
+                data: [2, 1.5, 1.2, 1.9, 1.1]
+              }
             ]
-        },
-        optionsBackEnd: {
+          },
+          options: {
             responsive: true,
             maintainAspectRatio: false,
             title: {
-                display: true,
-                text: 'Compétence Back-end',
-                fontSize: 20
+              display: true,
+              text: 'Compétence Back-end',
+              fontSize: 20
             },
             legend: {
-                display: false
-            },
-        },
-        optionsfrontEnd: {
-            responsive: true,
-            maintainAspectRatio: false,
-            title: {
-                display: true,
-                text: 'Compétence Front-end',
-                fontSize: 20
-            },
-            legend: {
-                display: false,
-            },
+              display: false
+            }
+          }
         }
-    })
+      ]
+    }
   }
-
+}
 </script>

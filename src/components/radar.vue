@@ -1,13 +1,14 @@
 
-    <radar></radar>
+<horizontal-bar></horizontal-bar>
+
 <script>
-import { Radar } from 'vue-chartjs'
+import { HorizontalBar } from 'vue-chartjs'
 
 export default {
-  extends: Radar,
+  extends: HorizontalBar,
   props: {
-      datacollection: Array,
-      options: Array
+    datacollection: Array,
+    options: Array
   },
   mounted () {
     this.renderChart(this.datacollection, this.options)
