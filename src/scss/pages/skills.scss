@@ -1,8 +1,6 @@
 .skills {
 	position: relative;
-	top: -1px;
-	height: 100vh;
-	width: 100%;
+	top: -40px;
 	z-index: 1000;
 	background: linear-gradient(
 		#20364d 0%, 
@@ -17,13 +15,9 @@
 		#e9f1fc 100%
 	);
 
-	&__title {
-		text-align: center;
-		color: #20364d;
-		font-size: 2.4em;
-		text-shadow: 1px 1px;
+	.title {
 		position: relative;
-		top: 200px;
+		top: 100px;
 	}
 }
 

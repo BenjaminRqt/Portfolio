@@ -21,24 +21,27 @@
           >
         </vue-particles>
 
-        <skills></skills>
         <projects></projects>
         <about-me></about-me>
+        <contact></contact>
     </div>
 </template>
 
 <script>
-  import Cover from './Cover'
-  import Skills from './Skills'
-  import Projects from './Projects'
-  import AboutMe from './AboutMe'
 
-  export default {
-    components: {
-      Cover,
-      Skills,
-      Projects,
-      AboutMe,
-    }
+import Cover from './Cover'
+import Skills from './Skills'
+import Projects from './Projects'
+import AboutMe from './AboutMe'
+import Contact from './Contact'
+
+export default {
+  components: {
+    Cover,
+    Skills,
+    Projects,
+    AboutMe,
+    Contact
   }
+}
 </script>
