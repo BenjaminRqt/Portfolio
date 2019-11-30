@@ -7,7 +7,7 @@
         :loop="true"
         :typeSpeed= 65
       >
-        <h1 class="typing"></h1>
+        <p class="typing"></p>
       </vue-typed-js>
     </div>
   </div>
