@@ -1,28 +1,47 @@
 <template>
-  <div class="header">
-    <div class="header__my-picture header__my-picture--round"></div>
-    <div class="header__identity">
-      <vue-typed-js
-        :strings="[name, '24 ans', 'Développeur Web']"
-        :loop="true"
-        :typeSpeed= 65
-      >
-        <p class="typing"></p>
-      </vue-typed-js>
+  <div class="cover">
+    <div class="cover_container">
+      <div class="cover__my-picture cover__my-picture--round">
+                <div class="spin spinner"></div>
+      </div>
+      <div class="cover__identity">
+        <vue-typed-js
+          :strings="['<h2>Benjamin Rouquet</h2> <br> 24 ans <br> Développeur Web <br> Freelance']"
+          :loop = false
+          :typeSpeed = 1
+          :showCursor = false
+          @onComplete = newShowable()
+        >
+          <p class="typing"></p>
+        </vue-typed-js>
+      </div>
+      <div>
+        <arrow v-if="nextIsShowable"
+          link="career"
+        >
+        </arrow>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 
+import Arrow from './../components/arrow'
+
 export default {
+  components: {
+    Arrow
+  },
   data () {
     return {
-      title: ''
+      nextIsShowable: false
     }
   },
-  props: {
-    name: String
+  methods: {
+    newShowable: function () {
+      this.nextIsShowable = true
+    }
   }
 }
 </script>

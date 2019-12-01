@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-      <cover name="Benjamin Rouquet"></cover>
+      <cover></cover>
 
       <vue-particles
             color="#20364d"
@@ -20,16 +20,20 @@
             clickMode="push"
           >
         </vue-particles>
+
+      <career></career>
     </div>
 </template>
 
 <script>
 
 import Cover from './Cover'
+import Career from './Career'
 
 export default {
   components: {
-    Cover
+    Cover,
+    Career
   }
 }
 </script>

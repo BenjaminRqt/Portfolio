@@ -3,10 +3,8 @@
 // ----------------------------
 // Components
 // ----------------------------
-@import 'components/button';
-@import 'components/inputs';
-@import 'components/color';
 @import 'components/vue-particles';
+@import 'components/arrow';
 
 
 // ----------------------------
@@ -17,7 +15,8 @@
 // ----------------------------
 // Pages
 // ----------------------------
-@import 'pages/header';
+@import 'pages/cover';
+@import 'pages/career';
 
 // ----------------------------
 // Library
