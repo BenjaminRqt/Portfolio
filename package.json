@@ -26,7 +26,8 @@
     "vue-chartjs": "^3.4.2",
     "vue-router": "^3.0.1",
     "vue-scrollmagic": "^1.1.0",
-    "vue-threejs": "^0.1.1"
+    "vue-threejs": "^0.1.1",
+    "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

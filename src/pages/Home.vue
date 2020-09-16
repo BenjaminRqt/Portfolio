@@ -28,12 +28,10 @@
 <script>
 
 import Cover from './Cover'
-import Career from './Career'
 
 export default {
   components: {
-    Cover,
-    Career
+    Cover
   }
 }
 </script>
