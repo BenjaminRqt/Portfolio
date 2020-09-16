@@ -15,24 +15,13 @@
           <p class="typing"></p>
         </vue-typed-js>
       </div>
-      <div>
-        <arrow v-if="nextIsShowable"
-          link="career"
-        >
-        </arrow>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
 
-import Arrow from './../components/arrow'
-
 export default {
-  components: {
-    Arrow
-  },
   data () {
     return {
       nextIsShowable: false
